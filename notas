@@ -1,0 +1,8 @@
+Toast react native
+
+Para seu caso, eu recomendo Firestore em tempo real
+Como você já está usando Firebase/Firestore, pode usar onSnapshot()
+
+
+Então eu faria assim no seu projeto
+Você pode continuar usando seu UsuariosContext, mas ele passa a ser alimentado pelo Firestore em tempo real.

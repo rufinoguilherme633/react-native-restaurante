@@ -18,7 +18,12 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logo.png"
+    },
+    "splash":{
+      "image":"./assets/logo.png",
+      "resizeMode":"contain",
+      "backgroundColor":"#FFF5EC"
     }
   }
 }

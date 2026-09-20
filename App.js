@@ -1,20 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { NavigationContainer } from "@react-navigation/native";
 
+import ConfirmarDadosCadastro from "./pages/confirmarDadosCadastro/ConfirmarDadosCadastro";
+import CriarAdministrador from "./pages/criarAdministrador/CriarAdministrador";
+import CriarRestaurante from "./pages/criarRestaurante/CriarRestaurante";
+import Login from "./pages/Login/Login";
+import SelecionarModoLogin from "./pages/SelecionarModoLogin/SelecionarModoLogin";
+import TelaEscolhaAcao from "./pages/TelaEscolhaAcao/TelaEscolhaAcao";
+import BoasVIndas from "./pages/BoasVindas/BoasVindas";
+import { CadastroRestauranteContext } from "./contexts/CadastroRestauranteContext";
+import AppStack from "./navigation/AppStack";
+
+const PilhaNavehacao = createNativeStackNavigator();
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <AppStack />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
